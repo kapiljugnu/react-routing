@@ -1,9 +1,11 @@
 import { RouterProvider } from "react-router";
 import { createBrowserRouter } from "react-router-dom";
-import { Homepage } from "./pages/Home";
+import HomePage from "./pages/Home";
+import ProductsPage from "./pages/Products";
 
 const router = createBrowserRouter([
-  {path: '/', element: <Homepage />}
+  { path: '/', element: <HomePage /> },
+  { path: '/products', element: <ProductsPage /> }
 ])
 
 
